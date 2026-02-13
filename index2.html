@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer página web responsive</title>
+</head>
+<body>
+    
+    <style>
+
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5; /* Espaciado o interlineado*/
+        }
+
+        header, nav, main, footer{
+            padding: 15px;
+        }
+
+        header{
+            background: #333;
+            color: white;
+        }
+
+        nav{
+            background: #eee;
+            text-align: center;
+        }
+
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .contenedor{
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .col{
+            background: #f6f6f6;
+            padding: 15px;
+            flex: 1;
+        }
+
+        @media(max-width:700px){/*Cuando sea de 0 a 700 va a ser una cosa y cuando sea más de 700 va a ser otra*/ 
+            .contenedor{flex-direction: column;} /*Que se vuelva una columna*/
+        }
+
+        nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+        
+        .col img{
+            max-width: 35%;
+            min-width: 75%;
+            height: auto;
+        }
+
+        section{
+            padding: 15px;
+        }
+        
+    </style>
+
+    <header>
+
+        <h1>Mi web responsive (Katya Alemán)</h1>
+
+        <p>Ejemplo simple para entender responsive</p>
+
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicio</a>
+        <a href="#">Contacto</a>
+    </nav>
+    
+    <main>
+
+        <div class="contenedor">
+            
+            <section class="col">
+
+                <h2>Sección 1</h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda doloremque suscipit optio vel deserunt autem cupiditate repudiandae. Tempora aut, tempore pariatur rerum porro dolores, minima ullam, eum reiciendis illo earum!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, itaque molestiae, magnam voluptas nemo ut explicabo debitis possimus pariatur quaerat sed, reprehenderit quae iste ab minus. Ipsum reprehenderit aliquam pariatur.</p>
+
+                <img src="https://www.elmundoeats.com/wp-content/uploads/2021/07/FP-Healthy-chocolate-sheet-cake-eaten-in-a-plate.jpg" alt="Pastel de chocolate">
+            </section>
+
+            <section class="col">
+
+                <h2>Sección 2</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quos nemo at totam neque alias consequatur! Amet quam earum deleniti eveniet debitis sapiente quasi alias perspiciatis, optio libero possimus quisquam.</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quidem molestias tenetur. Error laudantium, rerum odio voluptatem quis reprehenderit necessitatibus iste vel. Ipsa soluta perferendis sunt sit? Expedita, unde. Voluptas.</p>
+
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/19/6c/cb/d7/delicias-do-trigo.jpg" alt="Otro pastel">
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Ejemplo sencillo</p>
+
+    </footer>
+</body>
+</html>

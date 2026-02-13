@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda página web responsive</title>
+</head>
+<body>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    header, nav, main, footer{
+        padding: 15px;
+    }
+
+    header{
+        background: #2b6cb0;
+        color: white;
+    }
+
+    nav{
+        background: #e2e8f0;
+        text-align: center;
+        display: inline-flex;
+        width: 100%;
+        height: 20px;
+    }
+
+    footer{
+        background: #2b6cb0;
+        color: white;
+        text-align: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        padding:15px;
+    }
+
+    /* columna que tiene 2 artículos */
+    .columna{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .caja{
+        background: #f7fafc;
+        padding: 15px;
+        border: 1px solid #ddd;
+        box-shadow: 10px 10px 25px black;
+        border-radius: 40px;
+    }
+
+    a{
+        text-decoration: none;
+        margin: 0px 20px;
+    }
+
+    a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #logo{
+        width: 20px;
+        height: auto;
+    }
+
+    #ola{
+        margin-left: 450px;
+    }
+</style>
+
+<header>
+    <h1>Mi web responsive (Katya Alemán)</h1>
+    <p>Ejemplo Simple Usando Grid</p>
+</header>
+
+<nav>
+    <div>
+        <img id="logo" src="https://cdn.inspireuplift.com/uploads/images/seller_products/30610/1702681894_rauwalejandro.png" alt="Logo de Rauw">
+    </div>
+
+    <div>
+        <a id="ola" href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Acerca</a>
+    </div>
+</nav>
+
+<main>
+    <div class="grid">
+
+        <!-- Columna izquierda -->
+        <article class="caja">
+            <h2>Artículo 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+
+        <!-- Columna del medio con 2 artículos -->
+        <div class="columna">
+            <article class="caja">
+                <h2>Artículo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="caja">
+                <h2>Artículo 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </div>
+
+        <!-- Columna derecha -->
+        <article class="caja">
+            <h2>Artículo 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; Footer - Ejemplo con Grid</p>
+</footer>
+
+</body>
+</html>
